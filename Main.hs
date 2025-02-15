@@ -1,5 +1,8 @@
 module Main where
 
-main :: IO() 
-main = do 
-  putStrLn "Atomic Bomb Project! BOOM"
+import Lexer 
+import Parser
+
+import Calc
+
+main = getContents >>= print . calc . parser . lexer 
