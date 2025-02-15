@@ -39,6 +39,7 @@ lexer (')':str) = TCPar : lexer str
 lexer (ch:str)
     | isSpace ch = lexer str
     | isDigit ch = lexerNum (ch:str)
+    | isAlpha ch = error "Lexical Error!"
 
 lexerNum :: String -> [Token]
 lexerNum str = case span isDigit str of

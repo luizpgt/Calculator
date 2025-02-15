@@ -1,3 +1,6 @@
+-- Happy grammar file: define here the grammar you wanna parse
+-- $ happy Parser.y
+
 {
     module Parser where
     

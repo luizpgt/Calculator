@@ -1,7 +1,13 @@
-Run this calculator: 
+Run this calculator on a file (with a one line expression):
 
 ```sh
 runghc Main.hs < file.in
+```
+
+Or iteratively:
+
+```sh
+ghc Maini.hs && ./Maini
 ```
 
 # Calculator 
@@ -24,4 +30,4 @@ runghc Main.hs < file.in
 | Date | Description |
 |:---|:---:|
 | Feb 14 11:00 PM | Support for basic arithmetic operations: +, -, *, /. Also support for parentheses for minimum precedence. |
-
+| Feb 15 11:00 AM | Run iteratively support. Minor comment. Alpha- lexical error. |
